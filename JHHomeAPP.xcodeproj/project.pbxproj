@@ -15,6 +15,9 @@
 		843A888F20DDB69700C224B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 843A888E20DDB69700C224B8 /* main.m */; };
 		843A889920DDB69A00C224B8 /* JHHomeAPPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 843A889820DDB69A00C224B8 /* JHHomeAPPTests.m */; };
 		843A88A420DDB69A00C224B8 /* JHHomeAPPUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 843A88A320DDB69A00C224B8 /* JHHomeAPPUITests.m */; };
+		84C562D920DDD3BE00E10A85 /* FirstPlug.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C562D820DDD3BE00E10A85 /* FirstPlug.m */; };
+		84C562DA20DDD3BE00E10A85 /* FirstPlug.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 84C562D720DDD3BE00E10A85 /* FirstPlug.h */; };
+		84C562DF20DDD59800E10A85 /* libFirstPlug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C562D520DDD3BE00E10A85 /* libFirstPlug.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		84C562D320DDD3BE00E10A85 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				84C562DA20DDD3BE00E10A85 /* FirstPlug.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		843A887C20DDB67500C224B8 /* JHHomeAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JHHomeAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		843A887F20DDB67500C224B8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +67,9 @@
 		843A889F20DDB69A00C224B8 /* JHHomeAPPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JHHomeAPPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		843A88A320DDB69A00C224B8 /* JHHomeAPPUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHHomeAPPUITests.m; sourceTree = "<group>"; };
 		843A88A520DDB69A00C224B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84C562D520DDD3BE00E10A85 /* libFirstPlug.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFirstPlug.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		84C562D720DDD3BE00E10A85 /* FirstPlug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstPlug.h; sourceTree = "<group>"; };
+		84C562D820DDD3BE00E10A85 /* FirstPlug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstPlug.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84C562DF20DDD59800E10A85 /* libFirstPlug.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +95,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		84C562D220DDD3BE00E10A85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -84,7 +111,9 @@
 				843A887E20DDB67500C224B8 /* JHHomeAPP */,
 				843A889720DDB69A00C224B8 /* JHHomeAPPTests */,
 				843A88A220DDB69A00C224B8 /* JHHomeAPPUITests */,
+				84C562D620DDD3BE00E10A85 /* FirstPlug */,
 				843A887D20DDB67500C224B8 /* Products */,
+				84C562DE20DDD59800E10A85 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +123,7 @@
 				843A887C20DDB67500C224B8 /* JHHomeAPP.app */,
 				843A889420DDB69900C224B8 /* JHHomeAPPTests.xctest */,
 				843A889F20DDB69A00C224B8 /* JHHomeAPPUITests.xctest */,
+				84C562D520DDD3BE00E10A85 /* libFirstPlug.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,6 +160,22 @@
 				843A88A520DDB69A00C224B8 /* Info.plist */,
 			);
 			path = JHHomeAPPUITests;
+			sourceTree = "<group>";
+		};
+		84C562D620DDD3BE00E10A85 /* FirstPlug */ = {
+			isa = PBXGroup;
+			children = (
+				84C562D720DDD3BE00E10A85 /* FirstPlug.h */,
+				84C562D820DDD3BE00E10A85 /* FirstPlug.m */,
+			);
+			path = FirstPlug;
+			sourceTree = "<group>";
+		};
+		84C562DE20DDD59800E10A85 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,6 +234,23 @@
 			productReference = 843A889F20DDB69A00C224B8 /* JHHomeAPPUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		84C562D420DDD3BE00E10A85 /* FirstPlug */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84C562DD20DDD3BE00E10A85 /* Build configuration list for PBXNativeTarget "FirstPlug" */;
+			buildPhases = (
+				84C562D120DDD3BE00E10A85 /* Sources */,
+				84C562D220DDD3BE00E10A85 /* Frameworks */,
+				84C562D320DDD3BE00E10A85 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FirstPlug;
+			productName = FirstPlug;
+			productReference = 84C562D520DDD3BE00E10A85 /* libFirstPlug.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -208,6 +271,9 @@
 						CreatedOnToolsVersion = 9.4.1;
 						TestTargetID = 843A887B20DDB67400C224B8;
 					};
+					84C562D420DDD3BE00E10A85 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
 				};
 			};
 			buildConfigurationList = 843A887720DDB67300C224B8 /* Build configuration list for PBXProject "JHHomeAPP" */;
@@ -226,6 +292,7 @@
 				843A887B20DDB67400C224B8 /* JHHomeAPP */,
 				843A889320DDB69900C224B8 /* JHHomeAPPTests */,
 				843A889E20DDB69A00C224B8 /* JHHomeAPPUITests */,
+				84C562D420DDD3BE00E10A85 /* FirstPlug */,
 			);
 		};
 /* End PBXProject section */
@@ -281,6 +348,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				843A88A420DDB69A00C224B8 /* JHHomeAPPUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84C562D120DDD3BE00E10A85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84C562D920DDD3BE00E10A85 /* FirstPlug.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +509,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2C4H9T5RF5;
 				INFOPLIST_FILE = JHHomeAPP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,6 +526,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2C4H9T5RF5;
 				INFOPLIST_FILE = JHHomeAPP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -531,6 +608,28 @@
 			};
 			name = Release;
 		};
+		84C562DB20DDD3BE00E10A85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84C562DC20DDD3BE00E10A85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -566,6 +665,15 @@
 			buildConfigurations = (
 				843A88AF20DDB69A00C224B8 /* Debug */,
 				843A88B020DDB69A00C224B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84C562DD20DDD3BE00E10A85 /* Build configuration list for PBXNativeTarget "FirstPlug" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84C562DB20DDD3BE00E10A85 /* Debug */,
+				84C562DC20DDD3BE00E10A85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
