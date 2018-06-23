@@ -15,11 +15,13 @@ open class SwiftInStaticLib:NSObject {
     @objc
     open func testLog()
     {
-        print("testloglllllll");
+        print("二级静态库中的swift方法-----");
 //        let obj = ObjcAPI.init()
 //        obj.objcMethod()
     }
     public func testLogInfo(info:String) {
         print("========\(info)");
     }
+    
+    
 }

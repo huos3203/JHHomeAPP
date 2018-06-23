@@ -12,7 +12,7 @@
 
 -(void)objcMethod
 {
-    NSLog(@"=========");
+    NSLog(@"二级静态库方法=========");
 }
 
 -(void)callSwiftMethod

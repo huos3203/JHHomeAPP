@@ -13,10 +13,10 @@
 		05FCFBA620DE2BAF0029F25F /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FCFBA520DE2BAF0029F25F /* File.swift */; };
 		05FCFBA720DE2D250029F25F /* libSwiftInStaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 05FCFB8B20DE123D0029F25F /* libSwiftInStaticLib.a */; };
 		05FCFBB120DE2F220029F25F /* SecondFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCFBAF20DE2F220029F25F /* SecondFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		05FCFBB420DE2F220029F25F /* SecondFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05FCFBAD20DE2F220029F25F /* SecondFramework.framework */; };
-		05FCFBB520DE2F220029F25F /* SecondFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05FCFBAD20DE2F220029F25F /* SecondFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		05FCFBBC20DE2F6B0029F25F /* testLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCFBBA20DE2F6B0029F25F /* testLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		05FCFBBD20DE2F6B0029F25F /* testLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FCFBBB20DE2F6B0029F25F /* testLog.m */; };
+		05FCFBBE20DE31B70029F25F /* SecondFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05FCFBAD20DE2F220029F25F /* SecondFramework.framework */; };
+		05FCFBC620DE36780029F25F /* SecondSwiftTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FCFBBF20DE330C0029F25F /* SecondSwiftTest.swift */; };
+		05FCFBC720DE36CE0029F25F /* testLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCFBBA20DE2F6B0029F25F /* testLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		843A888120DDB67500C224B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 843A888020DDB67500C224B8 /* AppDelegate.m */; };
 		843A888420DDB67500C224B8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843A888320DDB67500C224B8 /* ViewController.m */; };
 		843A888720DDB67600C224B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843A888520DDB67600C224B8 /* Main.storyboard */; };
@@ -31,7 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		05FCFBB220DE2F220029F25F /* PBXContainerItemProxy */ = {
+		05FCFBC420DE35CC0029F25F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 843A887420DDB67300C224B8 /* Project object */;
 			proxyType = 1;
@@ -65,17 +65,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		05FCFBB920DE2F220029F25F /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				05FCFBB520DE2F220029F25F /* SecondFramework.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		84C562D320DDD3BE00E10A85 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -100,6 +89,7 @@
 		05FCFBB020DE2F220029F25F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05FCFBBA20DE2F6B0029F25F /* testLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testLog.h; sourceTree = "<group>"; };
 		05FCFBBB20DE2F6B0029F25F /* testLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testLog.m; sourceTree = "<group>"; };
+		05FCFBBF20DE330C0029F25F /* SecondSwiftTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSwiftTest.swift; sourceTree = "<group>"; };
 		843A887C20DDB67500C224B8 /* JHHomeAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JHHomeAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		843A887F20DDB67500C224B8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		843A888020DDB67500C224B8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -141,7 +131,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				84C562DF20DDD59800E10A85 /* libFirstPlug.a in Frameworks */,
-				05FCFBB420DE2F220029F25F /* SecondFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +152,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05FCFBBE20DE31B70029F25F /* SecondFramework.framework in Frameworks */,
 				05FCFBA720DE2D250029F25F /* libSwiftInStaticLib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -188,6 +178,7 @@
 				05FCFBB020DE2F220029F25F /* Info.plist */,
 				05FCFBBA20DE2F6B0029F25F /* testLog.h */,
 				05FCFBBB20DE2F6B0029F25F /* testLog.m */,
+				05FCFBBF20DE330C0029F25F /* SecondSwiftTest.swift */,
 			);
 			path = SecondFramework;
 			sourceTree = "<group>";
@@ -278,7 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05FCFBB120DE2F220029F25F /* SecondFramework.h in Headers */,
-				05FCFBBC20DE2F6B0029F25F /* testLog.h in Headers */,
+				05FCFBC720DE36CE0029F25F /* testLog.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,12 +318,10 @@
 				843A887820DDB67400C224B8 /* Sources */,
 				843A887920DDB67400C224B8 /* Frameworks */,
 				843A887A20DDB67400C224B8 /* Resources */,
-				05FCFBB920DE2F220029F25F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				05FCFBB320DE2F220029F25F /* PBXTargetDependency */,
 			);
 			name = JHHomeAPP;
 			productName = JHHomeAPP;
@@ -386,6 +375,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				05FCFBC520DE35CC0029F25F /* PBXTargetDependency */,
 			);
 			name = FirstPlug;
 			productName = FirstPlug;
@@ -408,6 +398,7 @@
 					};
 					05FCFBAC20DE2F220029F25F = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 					843A887B20DDB67400C224B8 = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -498,6 +489,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05FCFBBD20DE2F6B0029F25F /* testLog.m in Sources */,
+				05FCFBC620DE36780029F25F /* SecondSwiftTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,10 +531,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		05FCFBB320DE2F220029F25F /* PBXTargetDependency */ = {
+		05FCFBC520DE35CC0029F25F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 05FCFBAC20DE2F220029F25F /* SecondFramework */;
-			targetProxy = 05FCFBB220DE2F220029F25F /* PBXContainerItemProxy */;
+			targetProxy = 05FCFBC420DE35CC0029F25F /* PBXContainerItemProxy */;
 		};
 		843A889620DDB69A00C224B8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -579,10 +571,11 @@
 		05FCFB8F20DE123D0029F25F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = NO;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -605,10 +598,11 @@
 		05FCFB9020DE123D0029F25F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = NO;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -630,6 +624,8 @@
 		05FCFBB720DE2F220029F25F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -649,9 +645,13 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				PRODUCT_BUNDLE_IDENTIFIER = com.clcw.SecondFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
 				SKIP_INSTALL = YES;
+				STRIP_SWIFT_SYMBOLS = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -662,6 +662,8 @@
 		05FCFBB820DE2F220029F25F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -680,9 +682,13 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.clcw.SecondFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
 				SKIP_INSTALL = YES;
+				STRIP_SWIFT_SYMBOLS = NO;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -932,7 +938,9 @@
 		84C562DB20DDD3BE00E10A85 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -943,7 +951,9 @@
 		84C562DC20DDD3BE00E10A85 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

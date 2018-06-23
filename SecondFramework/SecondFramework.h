@@ -15,6 +15,6 @@ FOUNDATION_EXPORT double SecondFrameworkVersionNumber;
 FOUNDATION_EXPORT const unsigned char SecondFrameworkVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like
-#import <SecondFramework/testLog.h>
+#import "testLog.h"//<SecondFramework/testLog.h>"
 
 

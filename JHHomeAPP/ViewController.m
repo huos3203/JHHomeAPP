@@ -8,8 +8,8 @@
 
 #import "ViewController.h"
 #import "FirstPlug.h"
-#import "ObjCAPI.h"
-#import <SecondFramework/SecondFramework.h>
+//#import "ObjCAPI.h"
+//#import <SecondFramework/SecondFramework.h>
 @interface ViewController ()
 
 @end
@@ -20,11 +20,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     [[FirstPlug new] testLog];
-    [[ObjcAPI alloc] objcMethod];
-    //
-    [[ObjcAPI alloc] callSwiftMethod];
+    [[FirstPlug new] callLibSwift];
     //调用framework方法
-    [[testLog alloc] test];
+    [[FirstPlug new] callFrameWorkMethod];
+//    [[ObjcAPI alloc] objcMethod];
+    //
+//    [[ObjcAPI alloc] callSwiftMethod];
+    //调用framework方法
+//    [[testLog alloc] test];
 }
 
 

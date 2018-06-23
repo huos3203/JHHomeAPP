@@ -7,10 +7,11 @@
 //
 
 #import "testLog.h"
-
+#import "SecondFramework-Swift.h"
 @implementation testLog
--(void)test
+-(void)testFramework
 {
     NSLog(@"Framework-----");
+    [[SecondSwiftTest new] secondSwiftTest];
 }
 @end
