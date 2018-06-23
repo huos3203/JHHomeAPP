@@ -9,8 +9,7 @@
 #import "ViewController.h"
 #import "FirstPlug.h"
 #import "ObjCAPI.h"
-
-//#import "JHHomeApp-Swift.h"
+#import <SecondFramework/SecondFramework.h>
 @interface ViewController ()
 
 @end
@@ -22,9 +21,10 @@
     // Do any additional setup after loading the view, typically from a nib.
     [[FirstPlug new] testLog];
     [[ObjcAPI alloc] objcMethod];
+    //
     [[ObjcAPI alloc] callSwiftMethod];
-    //Swift
-//    [[[testLog alloc] init] logInfo];
+    //调用framework方法
+    [[testLog alloc] test];
 }
 
 

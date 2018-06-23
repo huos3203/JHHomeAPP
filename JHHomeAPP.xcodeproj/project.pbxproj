@@ -8,10 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		05FCFB8E20DE123D0029F25F /* SwiftInStaticLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FCFB8D20DE123D0029F25F /* SwiftInStaticLib.swift */; };
-		05FCFB9220DE12C20029F25F /* libSwiftInStaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 05FCFB8B20DE123D0029F25F /* libSwiftInStaticLib.a */; };
 		05FCFB9620DE13570029F25F /* ObjcAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FCFB9520DE13570029F25F /* ObjcAPI.m */; };
 		05FCFB9720DE20320029F25F /* ObjcAPI.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 05FCFB9420DE13570029F25F /* ObjcAPI.h */; };
 		05FCFBA620DE2BAF0029F25F /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FCFBA520DE2BAF0029F25F /* File.swift */; };
+		05FCFBA720DE2D250029F25F /* libSwiftInStaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 05FCFB8B20DE123D0029F25F /* libSwiftInStaticLib.a */; };
+		05FCFBB120DE2F220029F25F /* SecondFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCFBAF20DE2F220029F25F /* SecondFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		05FCFBB420DE2F220029F25F /* SecondFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05FCFBAD20DE2F220029F25F /* SecondFramework.framework */; };
+		05FCFBB520DE2F220029F25F /* SecondFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05FCFBAD20DE2F220029F25F /* SecondFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05FCFBBC20DE2F6B0029F25F /* testLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCFBBA20DE2F6B0029F25F /* testLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		05FCFBBD20DE2F6B0029F25F /* testLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FCFBBB20DE2F6B0029F25F /* testLog.m */; };
 		843A888120DDB67500C224B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 843A888020DDB67500C224B8 /* AppDelegate.m */; };
 		843A888420DDB67500C224B8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843A888320DDB67500C224B8 /* ViewController.m */; };
 		843A888720DDB67600C224B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843A888520DDB67600C224B8 /* Main.storyboard */; };
@@ -26,6 +31,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		05FCFBB220DE2F220029F25F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 843A887420DDB67300C224B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05FCFBAC20DE2F220029F25F;
+			remoteInfo = SecondFramework;
+		};
 		843A889520DDB69A00C224B8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 843A887420DDB67300C224B8 /* Project object */;
@@ -53,6 +65,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		05FCFBB920DE2F220029F25F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				05FCFBB520DE2F220029F25F /* SecondFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		84C562D320DDD3BE00E10A85 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -72,6 +95,11 @@
 		05FCFB9420DE13570029F25F /* ObjcAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjcAPI.h; sourceTree = "<group>"; };
 		05FCFB9520DE13570029F25F /* ObjcAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjcAPI.m; sourceTree = "<group>"; };
 		05FCFBA520DE2BAF0029F25F /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		05FCFBAD20DE2F220029F25F /* SecondFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SecondFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		05FCFBAF20DE2F220029F25F /* SecondFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondFramework.h; sourceTree = "<group>"; };
+		05FCFBB020DE2F220029F25F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05FCFBBA20DE2F6B0029F25F /* testLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testLog.h; sourceTree = "<group>"; };
+		05FCFBBB20DE2F6B0029F25F /* testLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testLog.m; sourceTree = "<group>"; };
 		843A887C20DDB67500C224B8 /* JHHomeAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JHHomeAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		843A887F20DDB67500C224B8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		843A888020DDB67500C224B8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -101,12 +129,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		05FCFBAA20DE2F220029F25F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		843A887920DDB67400C224B8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05FCFB9220DE12C20029F25F /* libSwiftInStaticLib.a in Frameworks */,
 				84C562DF20DDD59800E10A85 /* libFirstPlug.a in Frameworks */,
+				05FCFBB420DE2F220029F25F /* SecondFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,6 +163,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05FCFBA720DE2D250029F25F /* libSwiftInStaticLib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +181,17 @@
 			path = SwiftInStaticLib;
 			sourceTree = "<group>";
 		};
+		05FCFBAE20DE2F220029F25F /* SecondFramework */ = {
+			isa = PBXGroup;
+			children = (
+				05FCFBAF20DE2F220029F25F /* SecondFramework.h */,
+				05FCFBB020DE2F220029F25F /* Info.plist */,
+				05FCFBBA20DE2F6B0029F25F /* testLog.h */,
+				05FCFBBB20DE2F6B0029F25F /* testLog.m */,
+			);
+			path = SecondFramework;
+			sourceTree = "<group>";
+		};
 		843A887320DDB67300C224B8 = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +200,7 @@
 				843A88A220DDB69A00C224B8 /* JHHomeAPPUITests */,
 				84C562D620DDD3BE00E10A85 /* FirstPlug */,
 				05FCFB8C20DE123D0029F25F /* SwiftInStaticLib */,
+				05FCFBAE20DE2F220029F25F /* SecondFramework */,
 				843A887D20DDB67500C224B8 /* Products */,
 				84C562DE20DDD59800E10A85 /* Frameworks */,
 			);
@@ -166,6 +214,7 @@
 				843A889F20DDB69A00C224B8 /* JHHomeAPPUITests.xctest */,
 				84C562D520DDD3BE00E10A85 /* libFirstPlug.a */,
 				05FCFB8B20DE123D0029F25F /* libSwiftInStaticLib.a */,
+				05FCFBAD20DE2F220029F25F /* SecondFramework.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -223,6 +272,18 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		05FCFBA820DE2F220029F25F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05FCFBB120DE2F220029F25F /* SecondFramework.h in Headers */,
+				05FCFBBC20DE2F6B0029F25F /* testLog.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		05FCFB8A20DE123D0029F25F /* SwiftInStaticLib */ = {
 			isa = PBXNativeTarget;
@@ -241,6 +302,24 @@
 			productReference = 05FCFB8B20DE123D0029F25F /* libSwiftInStaticLib.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		05FCFBAC20DE2F220029F25F /* SecondFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05FCFBB620DE2F220029F25F /* Build configuration list for PBXNativeTarget "SecondFramework" */;
+			buildPhases = (
+				05FCFBA820DE2F220029F25F /* Headers */,
+				05FCFBA920DE2F220029F25F /* Sources */,
+				05FCFBAA20DE2F220029F25F /* Frameworks */,
+				05FCFBAB20DE2F220029F25F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SecondFramework;
+			productName = SecondFramework;
+			productReference = 05FCFBAD20DE2F220029F25F /* SecondFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		843A887B20DDB67400C224B8 /* JHHomeAPP */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 843A88A820DDB69A00C224B8 /* Build configuration list for PBXNativeTarget "JHHomeAPP" */;
@@ -248,10 +327,12 @@
 				843A887820DDB67400C224B8 /* Sources */,
 				843A887920DDB67400C224B8 /* Frameworks */,
 				843A887A20DDB67400C224B8 /* Resources */,
+				05FCFBB920DE2F220029F25F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				05FCFBB320DE2F220029F25F /* PBXTargetDependency */,
 			);
 			name = JHHomeAPP;
 			productName = JHHomeAPP;
@@ -325,6 +406,9 @@
 						CreatedOnToolsVersion = 10.0;
 						LastSwiftMigration = 1000;
 					};
+					05FCFBAC20DE2F220029F25F = {
+						CreatedOnToolsVersion = 10.0;
+					};
 					843A887B20DDB67400C224B8 = {
 						CreatedOnToolsVersion = 9.4.1;
 						LastSwiftMigration = 1000;
@@ -360,11 +444,19 @@
 				843A889E20DDB69A00C224B8 /* JHHomeAPPUITests */,
 				84C562D420DDD3BE00E10A85 /* FirstPlug */,
 				05FCFB8A20DE123D0029F25F /* SwiftInStaticLib */,
+				05FCFBAC20DE2F220029F25F /* SecondFramework */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		05FCFBAB20DE2F220029F25F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		843A887A20DDB67400C224B8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -398,6 +490,14 @@
 			files = (
 				05FCFB9620DE13570029F25F /* ObjcAPI.m in Sources */,
 				05FCFB8E20DE123D0029F25F /* SwiftInStaticLib.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05FCFBA920DE2F220029F25F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05FCFBBD20DE2F6B0029F25F /* testLog.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +539,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		05FCFBB320DE2F220029F25F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05FCFBAC20DE2F220029F25F /* SecondFramework */;
+			targetProxy = 05FCFBB220DE2F220029F25F /* PBXContainerItemProxy */;
+		};
 		843A889620DDB69A00C224B8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 843A887B20DDB67400C224B8 /* JHHomeAPP */;
@@ -519,6 +624,69 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		05FCFBB720DE2F220029F25F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2C4H9T5RF5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SecondFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				PRODUCT_BUNDLE_IDENTIFIER = com.clcw.SecondFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		05FCFBB820DE2F220029F25F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2C4H9T5RF5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SecondFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.clcw.SecondFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -791,6 +959,15 @@
 			buildConfigurations = (
 				05FCFB8F20DE123D0029F25F /* Debug */,
 				05FCFB9020DE123D0029F25F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05FCFBB620DE2F220029F25F /* Build configuration list for PBXNativeTarget "SecondFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05FCFBB720DE2F220029F25F /* Debug */,
+				05FCFBB820DE2F220029F25F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
